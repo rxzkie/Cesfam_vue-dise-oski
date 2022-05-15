@@ -1,21 +1,13 @@
 <template>
     <div class="detalle_remedio">
         <div class="columns is-multiline">
-
+            <!--imagen  -->
             <div class="card" style="width: 33rem;">
                 <img class="card-img-top" v-bind:src="remedio.get_thumbnail" alt="" loading="lazy" width="500"
                     height="500">
             </div>
 
-
-
-
             <div class="card" style="width: 44rem;">
-
-
-
-
-
 
                 <div class="card-body">
                     <h5 class="card-title">
@@ -29,7 +21,7 @@
                     <p><strong>Cantidad: </strong>{{ remedio.cantidadRemedio }}</p>
                     <p><strong>Stock: </strong>{{ remedio.stockRemedio }}</p>
 
-
+                        <!--selector cantidad  -->
                     <div class="col-md-12 overflow-needed">
 
                         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pfr">
@@ -51,11 +43,11 @@
 
                     </div>
 
-
+                    <!--boton añadir--> 
                     <div class="control">
                         <br>
 
-                        <div class="add-to-cart"><button class="btn btn-warning" data-disable-with="Agregando ..."
+                        <div class="add-to-cart"><button class="btn btn-primary" data-disable-with="Agregando ..."
                                 id="add-to-cart-button" @click="addToCart">Añadir al carro<span><img
                                         src="https://d1tjllbjmslitt.cloudfront.net/assets/shopping_cart_icon_white-e9d947ffee21ece11fe275b55f3ebc35cd7979255ec6d4f4bdda66721efa350e.svg"
                                         alt="Shopping cart icon white" width="15" height="15"></span></button>

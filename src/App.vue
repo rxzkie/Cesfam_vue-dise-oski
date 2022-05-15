@@ -23,8 +23,8 @@
             </li>
             <li class="nav-item">
               <div class="buttons">
-                <router-link to="/carrito" class="button is-success">
-                  <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+                <router-link to="/carrito" class="btn btn-primary" >
+                  <span class="icon" > <i class="fas fa-shopping-cart"></i></span>
                   <span>Carrito ({{ cartTotalLength }})</span>
                 </router-link>
               </div>

@@ -18,15 +18,11 @@
               class="form-control" id="contactSubjectInput" name="contactSubject" required="" value=""></div>
           <div class="form-group"><label for="contactMessageInput">Su mensaje (requerido)</label><textarea
               class="form-control" id="contactMessageInput" rows="3" name="contactMessage" required=""></textarea></div>
-          <button type="submit" class="btn btn-primary">Enviar</button><br><br><br>
-          <br><br><br>
+          <br><br><br><button type="submit" class="btn btn-primary">Enviar</button>
+          <br><br>
 
         </form>
       </div>
-      <br>
-      <br>
-      <br>
-
 
       <!--mapa  -->
       <iframe
