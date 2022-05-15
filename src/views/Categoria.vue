@@ -4,11 +4,7 @@
             <div class="column is-12">
                 <h2 class="is-size-2 has-text-centered">{{ categoria.nombreCategoria }}</h2>
             </div>
-            <RemediosBox
-            v-for="remedio in categoria.remedios"
-            v-bind:key="remedio.id"
-            v-bind:remedio="remedio"
-            />
+            <RemediosBox v-for="remedio in categoria.remedios" v-bind:key="remedio.id" v-bind:remedio="remedio" />
         </div>
     </div>
 </template>
@@ -18,8 +14,8 @@ import axios from 'axios'
 import RemediosBox from '@/components/RemediosBox'
 export default {
     name: 'Categoria',
-    data(){
-        return{
+    data() {
+        return {
             categoria: {
                 remedios: []
             }
@@ -33,18 +29,18 @@ export default {
     },
     watch: {
         $route(to, from) {
-            if (to.name === "Categoria"){
+            if (to.name === "Categoria") {
                 this.getCategoria()
             }
         }
     },
     methods: {
-        getCategoria(){
+        getCategoria() {
             const categoriaSlug = this.$route.params.categoria_slug
 
             axios
                 .get(`/api/v1/remedios/${categoriaSlug}`)
-                .then(response =>{
+                .then(response => {
                     this.categoria = response.data
 
                     document.title = this.categoria.nombreCategoria + ' | Cesfam'

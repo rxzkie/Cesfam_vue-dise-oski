@@ -8,6 +8,8 @@ import Carrito from '../views/Carrito.vue'
 import Registro from '../views/Registro.vue'
 import IniciarSesion from '../views/IniciarSesion.vue'
 import Cuenta from '../views/Cuenta.vue'
+import contacto from '../views/contacto.vue' 
+import nosotros from '../views/nosotros.vue' 
 
 const routes = [
   {
@@ -63,6 +65,20 @@ const routes = [
     name: 'Cuenta',
     component: Cuenta
   },
+
+  {
+    path: '/contacto',
+    name: 'contacto',
+    component: contacto
+  },
+
+  {
+    path: '/nosotros',
+    name: 'nosotros',
+    component: nosotros
+  },
+
+
 ]
 
 const router = createRouter({
