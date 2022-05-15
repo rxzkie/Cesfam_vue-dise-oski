@@ -1,50 +1,104 @@
 <template>
     <div class="detalle_remedio">
         <div class="columns is-multiline">
-            <div class="column is-9">
 
-                <!--imagen remedio  -->
-                <img v-bind:src="remedio.get_thumbnail" class="elementor-animation-grow attachment-full size-full"
-                    alt="" loading="lazy" width="700" height="700">
-
-
-
-
-
-                 <!--desc remedio  -->
-                <h1 class="title">Descripción</h1>
-                <p>{{ remedio.descripcionRemedio }}</p>
+            <div class="card" style="width: 33rem;">
+                <img class="card-img-top" v-bind:src="remedio.get_thumbnail" alt="" loading="lazy" width="500"
+                    height="500">
             </div>
-            <div class="column is-3">
-                <h1 class="title">Información</h1>
-                <h2 class="subtitle">{{ remedio.nombreRemedio }}</h2>
-                <p><strong>Stock: </strong>{{ remedio.stockRemedio }}</p>
-                <p><strong>Precio: </strong>$ {{ remedio.precioRemedio }}</p>
-                <p><strong>Cantidad: </strong>{{ remedio.cantidadRemedio }}</p>
 
-                <div class="field has-addons mt-6">
-                    <!-- el has-addons indica que el botón y el input van a estar juntos el uno del otro -->
-                    <div class="control">
-                        <input type="number" class="input" min="1" v-model="quantity" width="20" height="2">
+
+
+
+            <div class="card" style="width: 44rem;">
+
+
+
+
+
+
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <h2 class="subtitle"></h2>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <h2 class="subtitle">{{ remedio.nombreRemedio }}</h2>
+                    </h6>
+                    <p class="card-text">{{ remedio.descripcionRemedio }}.</p>
+                    <p><strong>Precio: </strong>$ {{ remedio.precioRemedio }}</p>
+                    <p><strong>Cantidad: </strong>{{ remedio.cantidadRemedio }}</p>
+                    <p><strong>Stock: </strong>{{ remedio.stockRemedio }}</p>
+
+
+                    <div class="col-md-12 overflow-needed">
+
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pfr">
+                            <div class="quantity">
+                                <label>
+                                    Cantidad
+                                </label>
+                                <div class="input-group">
+                                    <i class="fa fa-chevron-up up" id="quantity-up">
+                                    </i><input type="number" class="input" min="1" v-model="quantity"
+                                        id="product-quantity">
+                                    <i class="fa fa-chevron-down down" id="quantity-down">
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
 
+
                     <div class="control">
+                        <br>
 
                         <div class="add-to-cart"><button class="btn btn-warning" data-disable-with="Agregando ..."
                                 id="add-to-cart-button" @click="addToCart">Añadir al carro<span><img
                                         src="https://d1tjllbjmslitt.cloudfront.net/assets/shopping_cart_icon_white-e9d947ffee21ece11fe275b55f3ebc35cd7979255ec6d4f4bdda66721efa350e.svg"
                                         alt="Shopping cart icon white" width="15" height="15"></span></button>
-                                
-                                
-                                       
-
+                        </div>
                     </div>
+
+
+
+
+
+                    <!-- 
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a> -->
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
     </div>
-    </div>
+
+
+
 </template>
+
+
+
 
 <script>
 import axios from 'axios'
