@@ -65,6 +65,12 @@
             Usa nuestra nueva herramienta digital para no tener que ir a buscar tus medicamentos.
           </p>
         </div>
+
+
+
+
+
+        
         <!--tarjetas-->
         <!--tarjeta #1-->
         <article class="col-4 card-effect">
@@ -76,7 +82,7 @@
               <p>
                 Acercate a las instalaciones y reserva ya tu hora.
               </p>
-              <a href="lista-productos.html" class="text-reset">Averigua más</a>
+              <a href="/nosotros" class="text-reset">Averigua más</a>
             </div>
           </div>
         </article>
@@ -104,7 +110,7 @@
               <p>
                 Descubre aqui mismo las atenciones disponibles para ti.
               </p>
-              <a href="{% url 'nosotros' %}" class="text-reset">Averigua más</a>
+              <a href="/nosotros" class="text-reset">Averigua más</a>
             </div>
           </div>
         </article>

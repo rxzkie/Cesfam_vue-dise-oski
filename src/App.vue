@@ -19,6 +19,9 @@
               <router-link class="nav-link active" aria-current="page" to="/nosotros">Sobre Nosotros</router-link>
             </li>
             <li class="nav-item">
+              <router-link class="nav-link active" aria-current="page" to="/contacto">Contacto</router-link>
+            </li>
+            <li class="nav-item">
               <div class="buttons">
                 <router-link to="/carrito" class="button is-success">
                   <span class="icon"><i class="fas fa-shopping-cart"></i></span>
