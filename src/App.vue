@@ -53,9 +53,9 @@
 
 
     <!-- footer -->
-    <footer class=" text-white pt-2 pb-1" style="background-color: #4d4e4f;">
+    <footer class=" text-white pt-0 pb-0" style="background-color: #4d4e4f;">
       <div class="container-fluid mt-2" id="cesfam-footer">
-        <div class="row pb-3">
+        <div class="row pb-1">
           <div class="col-12 col-md-4">
             <h3 class="page-header" style="color: #0a0a0a;">Corporación Municipal Viña del Mar</h3>
             <div class="row">
