@@ -1,5 +1,7 @@
 <template>
 
+    <!--filtro  -->
+
     <div class=topcorner data-hook="navigation" style="width: 13rem; height: 7rem;">
         <h3 class="panel-heading filter-title">Categorías</h3>
         <div class="ais-HierarchicalMenu">
@@ -8,11 +10,11 @@
                     <li class="ais-HierarchicalMenu-item"><a class="ais-HierarchicalMenu-link" href="/analgesicos"><span
                                 class="ais-HierarchicalMenu-label">Analgésicos</span> <span
                                 class="ais-HierarchicalMenu-count">5</span></a></li>
-                    <li class="ais-HierarchicalMenu-item"><a class="ais-HierarchicalMenu-link" href="#"><span
-                                class="ais-HierarchicalMenu-label">Higiene</span> <span
+                    <li class="ais-HierarchicalMenu-item"><a class="ais-HierarchicalMenu-link" href="/antiacidos"><span
+                                class="ais-HierarchicalMenu-label">Antiácidos</span> <span
                                 class="ais-HierarchicalMenu-count">40</span></a></li>
                     <li class="ais-HierarchicalMenu-item"><a class="ais-HierarchicalMenu-link" href="#"><span
-                                class="ais-HierarchicalMenu-label">Incontinencia Leve</span> <span
+                                class="ais-HierarchicalMenu-label">Antitusivos Leve</span> <span
                                 class="ais-HierarchicalMenu-count">15</span></a></li>
                     <li class="ais-HierarchicalMenu-item"><a class="ais-HierarchicalMenu-link" href="#"><span
                                 class="ais-HierarchicalMenu-label">Pañales Adultos</span> <span
@@ -54,7 +56,10 @@
 
 
 
+    <!--remedios  -->
+
     <div class="container">
+
 
         <RemediosBox v-for="remedio in latestRemedios" v-bind:key="remedio.id" v-bind:remedio="remedio" />
     </div>
@@ -66,36 +71,9 @@
 
 
 
-
-
-
-
-
-
-
-
-    <!--filtro  -->
-    <div class="home">
-        <div class="column form-floating">
-            <button type="button" class="btn btn-secondary">
-                <router-link to="/analgesicos">Analgésicos</router-link>
-            </button>
-        </div>
-        <div class="column form-floating">
-            <button type="button" class="btn btn-secondary">
-                <router-link to="/antiacidos">Antiácidos</router-link>
-            </button>
-        </div>
-
-        <div class="column form-floating">
-            <button type="button" class="btn btn-secondary">
-                <router-link to="/antiacidos">Antitusivos</router-link>
-            </button>
-        </div>
-    </div>
-
-
 </template>
+
+
 
    <style>
 .container {
