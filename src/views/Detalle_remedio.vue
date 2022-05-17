@@ -6,9 +6,8 @@
                 <img class="card-img-top" v-bind:src="remedio.get_thumbnail" alt="" loading="lazy" width="500"
                     height="500">
             </div>
-
+            <!--tarjeta descripcion  -->
             <div class="card" style="width: 44rem;">
-
                 <div class="card-body">
                     <h5 class="card-title">
                         <h2 class="subtitle"></h2>
@@ -21,9 +20,8 @@
                     <p><strong>Cantidad: </strong>{{ remedio.cantidadRemedio }}</p>
                     <p><strong>Stock: </strong>{{ remedio.stockRemedio }}</p>
 
-                        <!--selector cantidad  -->
+                    <!--selector cantidad  -->
                     <div class="col-md-12 overflow-needed">
-
                         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pfr">
                             <div class="quantity">
                                 <label>
@@ -38,52 +36,46 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
 
-                    <!--boton añadir--> 
+                    
+                 <div class="row m-0" style="width: 20rem; height: 1rem;">
+                        <div class="col-xs-12 col-md-6 pl-0">
+                            <div class="shipment-methods pickup pickup_delivery">
+                                <div class="shipment-methods-title-desc" >
+                                    <div class="asd" >Retiro en farmacia </div>
+                                    <div class="desc">Disponible</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 px-0">
+                            <div class="shipment-methods home_delivery mt-sm package_delivery">
+                                <div class="shipment-methods-title-desc">
+                                    <div class="asd">Despacho a domicilio</div>
+                                    <div class="desc">Disponible</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+       
+                    <!--boton añadir-->
                     <div class="control">
                         <br>
-
                         <div class="add-to-cart"><button class="btn btn-primary" data-disable-with="Agregando ..."
                                 id="add-to-cart-button" @click="addToCart">Añadir al carro<span><img
                                         src="https://d1tjllbjmslitt.cloudfront.net/assets/shopping_cart_icon_white-e9d947ffee21ece11fe275b55f3ebc35cd7979255ec6d4f4bdda66721efa350e.svg"
                                         alt="Shopping cart icon white" width="15" height="15"></span></button>
                         </div>
                     </div>
-
-
-
-
-
-                    <!-- 
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a> -->
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
     </div>
+
+
+
+      
 
 
 

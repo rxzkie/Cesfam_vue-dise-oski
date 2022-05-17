@@ -1,5 +1,8 @@
 <template>
-    <div class="card" style="width: 18rem; height: 23rem;">
+
+
+
+    <div class="card" style="width: 19rem; height: 23rem;">
         <img v-bind:src="remedio.get_thumbnail" class="card-img-top">
         <div class="card-body">
             <h5 class="card-title">{{ remedio.nombreRemedio }}</h5>
