@@ -1,7 +1,7 @@
 <template>
   <!-- cabezera -->
   <div class="wrapper">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #a0cae8;">
       <div class="container-fluid">
         <div class="navbar-brand">
           <a class="navbar-brand2"><a href="/"><img src=https://i.postimg.cc/3J9V2Cbd/ndice.png width="80px" height="19px"
@@ -33,7 +33,7 @@
           </ul>
           <form class="d-flex" method="get" action="/Search">
             <input class="input form-control me-2" type="text" placeholder="Buscar..." aria-label="Search" name="query">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <button class="btn btn-primary"  type="submit">Buscar</button>
           </form>
         </div>
       </div>
@@ -42,8 +42,17 @@
     <section class="section">
       <router-view />
     </section>
+
+
+
+
+
+
+
+
+
     <!-- footer -->
-    <footer class="bg-dark text-white pt-2 pb-1">
+    <footer class=" text-white pt-2 pb-1" style="background-color: #a0cae8;">
       <div class="container-fluid mt-2" id="cesfam-footer">
         <div class="row pb-3">
           <div class="col-12 col-md-4">
@@ -97,6 +106,11 @@
 
 
 <style>
+.site-footer {
+  background: orange;
+  height: 50px;
+}
+
 
 .navbar-brand2 {
     position: absolute;
