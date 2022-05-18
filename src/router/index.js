@@ -12,6 +12,10 @@ import contacto from '../views/contacto.vue'
 import nosotros from '../views/nosotros.vue' 
 
 const routes = [
+  
+
+
+
   {
     path: '/',
     name: 'home',
@@ -87,3 +91,4 @@ const router = createRouter({
 })
 
 export default router
+

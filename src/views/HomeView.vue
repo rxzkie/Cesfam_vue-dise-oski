@@ -54,7 +54,7 @@
       </button>
     </div>
 
-    <section class="container">
+    <section class="containerr">
       <div class="row">
 
         <!--textos-->
@@ -115,7 +115,7 @@
           </div>
         </article>
 
-        <section class="container">
+        <section class="containerr">
           <div class="row">
             <!--titulo-->
             <h2 class="col-12 text-center">
