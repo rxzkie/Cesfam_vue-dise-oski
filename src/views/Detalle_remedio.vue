@@ -50,7 +50,7 @@
                         <div class="add-to-cart"><button class="btn btn-primary" data-disable-with="Agregando ..."
                                 id="add-to-cart-button" @click="addToCart">Añadir al carro<span><img
                                         src="https://d1tjllbjmslitt.cloudfront.net/assets/shopping_cart_icon_white-e9d947ffee21ece11fe275b55f3ebc35cd7979255ec6d4f4bdda66721efa350e.svg"
-                                        alt="Shopping cart icon white" width="15" height="15"></span></button>
+                                        alt="Shopping cart icon white" width="13" height="15"></span></button>
                         </div>
                     </div>
 
